@@ -1,0 +1,59 @@
+variational autoencoders (VAEs)
+generative adversarial networks (GANs)
+graph neural networks (GNNs)
+
+
+
+
+
+
+
+
+###########################Automatic Chemical Design Using a Data Driven Continuous Representation of Molecules##############################
+
+
+
+The objectif in this paper is to generate new molecule with a specific 	chemical properties
+
+the model has 3 companante:
+Encoder: onverts the discrete representation of a molecule into a real-valued continuous vector take smiles as input(knowen as latent space representation)
+	+Technicall implementation: The encoder can be implemented using a neural network, typically a series of convolutional layers followed by fully connected layers. The output of the encoder is the continuous vector representation of the input molecule.
+Decoder: onverts these continuous vectors back to discrete molecular representations
+	+ Like the encoder, the decoder can be implemented using neural network layers, possibly with a symmetrical architecture to the encoder.
+
+The predictor:estimates chemical properties from the latent continuous vector representation of the molecule
+		+ The predictor can be implemented as a separate neural network or as part of the overall architecture.
+		+ The output of the predictor could be various chemical properties such as solubility, toxicity, bioactivity, etc.
+		+ The predictor network is trained to predict these properties based on the latent representation of the molecule.
+
+
+
+the question here is we can identify a mof:
+
+			+ the characteristic hat reamins constant for a given MOF:
+				* Chemical Composition
+				* Topological Structure
+				* Unit Cell Parameters
+				* Crystal Symmetry
+				* Coordination Environmment of Metal Nodes
+				* Porosity and Surface Area
+				* Thermal Stability
+				* Optical Properties
+			+ other characterisic:
+				* Targeted Pore Size and Shipe
+				* High surface area
+				* Chemical Stability
+				* Tunable Functionality
+				* Scalability and Synthesis Feasibility
+				
+			
+			
+			
+			
+			
+			
+				
+
+
+
+
